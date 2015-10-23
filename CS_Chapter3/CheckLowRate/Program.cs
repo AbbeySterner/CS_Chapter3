@@ -9,6 +9,9 @@ namespace CheckLowRate
     {
         static void Main(string[] args)
         {
+            double hourlypayrate = 3.75;
+            if (hourlypayrate < 5.65)
+                Console.WriteLine("error");
         }
     }
 }

@@ -9,6 +9,12 @@ namespace EnsureValidPayRate
     {
         static void Main(string[] args)
         {
+
+            Double payrate = 3.25;
+            if (payrate < 5.65 || payrate > 49.99)
+                if (payrate < 5.65 || payrate > 49.99)
+                    Console.WriteLine("error");
+
         }
     }
 }
