@@ -9,7 +9,10 @@ namespace CheckLowAndHighRate
     {
         static void Main(string[] args)
         {
-            Double payrate = 3.25;
+            double payrate;
+            Console.Write("Please enter your  pay rate");
+            payrate = Convert.ToDouble(Console.ReadLine());
+
             if (payrate < 5.65 || payrate > 49.99)
                 Console.WriteLine("error");
           

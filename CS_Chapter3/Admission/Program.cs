@@ -9,26 +9,27 @@ namespace Admission
     {
         static void Main(string[] args)
         {
-            String gradePoint;
+            int gradePoint;
             Console.Write("Please enter your grade point average");
-            gradePoint= Console.ReadLine();
-             String testScore;
-            Console.Write("Please enter your test score");
-            testScore= Console.ReadLine();
+            gradePoint = Convert.ToInt32(Console.ReadLine());
 
-            if (gradePoint => 3.0)
+            int testScore;
+            Console.Write("Please enter your test score");
+            testScore = Convert.ToInt32(Console.ReadLine());
+
+
+            if (gradePoint >= 3.0)
             {
                 if (testScore >= 60)
                     Console.WriteLine("Accept");
-
-                else
+                else Console.WriteLine("Reject");
+            }
+            if (gradePoint < 3)
             {
-                    if (testScore >= 80)
-                        Console.WriteLine("Accept");
-                    else Console.WriteLine("Reject");
-            }       
-
-
+                if (testScore >= 80)
+                    Console.WriteLine("Accept");
+                else Console.WriteLine("Reject");
+            }
         }
     }
 }
